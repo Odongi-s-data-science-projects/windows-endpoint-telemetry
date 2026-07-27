@@ -56,3 +56,4 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 | Event ID | Meaning | Source | Why It Matters |
 |----------|---------|--------|----------------|
+| 11 | File create | Sysmon | Records when a file is created on the system. Useful for detecting dropped payloads, malware installation activity, suspicious file creation locations, and tracking artifacts during investigations. |
