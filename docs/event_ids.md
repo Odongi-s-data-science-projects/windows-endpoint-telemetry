@@ -10,18 +10,23 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 ## Authentication
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
+| 4624 | Successful logon | Windows Security | Records successful authentication. Useful for building timelines, identifying user activity, and detecting unexpected logins. |
+| 4625 | Failed logon | Windows Security | Records failed authentication attempts. Useful for detecting password spraying, brute-force attacks, and invalid credential use. |
+| 4634 | Logoff | Windows Security | Indicates that a user session ended. Helps determine session duration, correlate user activity, and identify when authenticated sessions terminate. |
+| 4648 | Logon using explicit credentials | Windows Security | Indicates that a process attempted authentication using credentials different from the current user's. Useful for detecting tools such as `runas`, scheduled tasks, remote administration, and possible lateral movement. |
+| 4672 | Special privileges assigned | Windows Security | Indicates that a successful logon received elevated privileges, such as administrative rights. Useful for identifying privileged account activity and investigating potential privilege escalation or unauthorized administrator access. |
 
 ## Process Creation
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
 
 ## Privilege Events
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
 
 ---
 
@@ -29,20 +34,20 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 ## Process Monitoring
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
 
 ## Network Monitoring
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
 
 ## Registry Monitoring
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
 
 ## File Monitoring
 
-| Event ID | Meaning | Why It Matters |
-|----------|---------|----------------|
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
