@@ -34,6 +34,10 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 # Sysmon Event IDs
 
+| Event ID | Meaning | Source | Why It Matters |
+|----------|---------|--------|----------------|
+| 1 | Process creation | Sysmon | Records when a process starts with detailed information including command lines, parent processes, hashes, and execution context. Useful for detecting suspicious execution patterns and reconstructing attack chains. |
+
 ## Process Monitoring
 
 | Event ID | Meaning | Source | Why It Matters |
