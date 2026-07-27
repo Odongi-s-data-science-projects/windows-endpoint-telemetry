@@ -1,0 +1,31 @@
+[
+    {
+        "event_id": 1,
+        "timestamp": "2026-07-27 10:15:02",
+        "source": "Sysmon",
+        "event_type": "Process Creation",
+        "image": "powershell.exe",
+        "command_line": "powershell.exe -ExecutionPolicy Bypass -File update.ps1",
+        "user": "Glen-PC\\Administrator"
+    },
+    {
+        "event_id": 3,
+        "timestamp": "2026-07-27 10:15:10",
+        "source": "Sysmon",
+        "event_type": "Network Connection",
+        "image": "powershell.exe",
+        "destination_ip": "185.100.100.25",
+        "destination_port": 443,
+        "user": "Glen-PC\\Administrator"
+    },
+    {
+        "event_id": 13,
+        "timestamp": "2026-07-27 10:15:20",
+        "source": "Sysmon",
+        "event_type": "Registry Value Set",
+        "target_object": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Updater",
+        "details": "C:\\Users\\Public\\update.exe",
+        "image": "powershell.exe",
+        "user": "Glen-PC\\Administrator"
+    }
+]
