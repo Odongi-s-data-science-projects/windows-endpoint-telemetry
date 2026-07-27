@@ -39,6 +39,7 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 | Event ID | Meaning | Source | Why It Matters |
 |----------|---------|--------|----------------|
 | 1 | Process creation | Sysmon | Records when a process starts with detailed information including command lines, parent processes, hashes, and execution context. Useful for detecting suspicious execution patterns and reconstructing attack chains. |
+| 7 | Image loaded | Sysmon | Records when a process loads an executable image or DLL into memory. Useful for detecting suspicious DLL loading, identifying unsigned modules, and investigating code injection or execution techniques. |
 
 ## Network Monitoring
 
