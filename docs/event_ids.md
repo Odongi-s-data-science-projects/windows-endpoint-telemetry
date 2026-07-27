@@ -28,7 +28,8 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 | Event ID | Meaning | Source | Why It Matters |
 |----------|---------|--------|----------------|
-
+| 4673 | Privileged service called | Windows Security | Records when a process requests sensitive system privileges. Useful for identifying privileged operations that may indicate administrative activity or attempted privilege escalation. |
+| 4674 | Operation on a privileged object | Windows Security | Records attempts to perform operations on protected system objects. Useful for investigating access to sensitive resources and detecting potential abuse of elevated privileges. |
 ---
 
 # Sysmon Event IDs
