@@ -51,6 +51,7 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 | Event ID | Meaning | Source | Why It Matters |
 |----------|---------|--------|----------------|
+| 13 | Registry value set | Sysmon | Records when a registry value is modified. Useful for detecting persistence mechanisms such as Run key modifications, unauthorized configuration changes, and suspicious registry activity. |
 
 ## File Monitoring
 
