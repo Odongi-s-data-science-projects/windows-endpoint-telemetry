@@ -22,6 +22,7 @@ This document describes the Windows Security and Sysmon Event IDs used throughou
 
 | Event ID | Meaning | Source | Why It Matters |
 |----------|---------|--------|----------------|
+| 4688 | Process creation | Windows Security | Records when a new process starts. Useful for identifying executed applications, reconstructing attack chains, analyzing parent-child process relationships, and detecting suspicious command-line activity. |
 
 ## Privilege Events
 
